@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://jf26c16c13pp"]
+
+[ext_resource type="Script" uid="uid://cy63xh514unvn" path="res://boule.gd" id="1_jiowd"]
+[ext_resource type="Texture2D" uid="uid://bqjopoju84yqu" path="res://boule.png" id="2_2x7xp"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_dtkk7"]
+radius = 64.00781
+
+[node name="Boule" type="RigidBody2D" unique_id=13616168]
+script = ExtResource("1_jiowd")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1953592637]
+shape = SubResource("CircleShape2D_dtkk7")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=2015183918]
+texture = ExtResource("2_2x7xp")

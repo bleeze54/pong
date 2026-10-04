@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://dhrjgdodtih1a"]
+
+[ext_resource type="PackedScene" uid="uid://bd73rshlikg5n" path="res://area_2d.tscn" id="1_ig7tw"]
+[ext_resource type="PackedScene" uid="uid://jf26c16c13pp" path="res://rigid_body_2d.tscn" id="2_0xm2m"]
+
+[node name="Main" type="Node" unique_id=1053115024]
+
+[node name="player" parent="." unique_id=1351594467 instance=ExtResource("1_ig7tw")]
+
+[node name="Boule" parent="." unique_id=13616168 instance=ExtResource("2_0xm2m")]
+position = Vector2(481, 275)
+mass = 0.001
+gravity_scale = 0.0
