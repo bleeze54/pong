@@ -1,4 +1,5 @@
-extends Sprite2D
+extends CharacterBody2D
+
 @export var speed =400
 var sccreen_size
 
@@ -22,3 +23,4 @@ func _process(delta: float) -> void:
 
 func _on_area_2d_body_entered(body: Node2D) -> void:
 	pass
+	
